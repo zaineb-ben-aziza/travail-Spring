@@ -1,6 +1,6 @@
-package com.example.examanhoussemhosni.Repo;
+package org.example.examenzeineb.Repo;
 
-import com.example.examanhoussemhosni.Entity.Compte;
+import org.example.examenzeineb.Entity.Compte;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CompteRepository extends CrudRepository<Compte,Long> {

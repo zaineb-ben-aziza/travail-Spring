@@ -1,6 +1,6 @@
-package com.example.examanhoussemhosni.Repo;
+package org.example.examenzeineb.Repo;
 
-import com.example.examanhoussemhosni.Entity.Bank;
+import org.example.examenzeineb.Entity.Bank;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BankRepository extends JpaRepository<Bank, Long> {

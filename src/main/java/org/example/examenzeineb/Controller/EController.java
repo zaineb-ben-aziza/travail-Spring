@@ -1,9 +1,10 @@
-    package com.example.examanhoussemhosni.Controller;
-    import com.example.examanhoussemhosni.Entity.Bank;
-    import com.example.examanhoussemhosni.Entity.Compte;
-    import com.example.examanhoussemhosni.Entity.Transaction;
-    import com.example.examanhoussemhosni.Entity.TypeTransaction;
-    import com.example.examanhoussemhosni.Service.ServiceExam;
+    package org.example.examenzeineb.Controller;
+
+    import org.example.examenzeineb.Entity.Bank;
+    import org.example.examenzeineb.Entity.Compte;
+    import org.example.examenzeineb.Entity.Transaction;
+    import org.example.examenzeineb.Entity.TypeTransaction;
+    import org.example.examenzeineb.Service.ServiceExam;
     import org.springframework.beans.factory.annotation.Autowired;
     import org.springframework.web.bind.annotation.PostMapping;
     import org.springframework.web.bind.annotation.RequestBody;
@@ -12,7 +13,7 @@
     import java.util.List;
 
     @RestController
-    public class ExamanController {
+    public class EController {
         @Autowired
         private ServiceExam serviceExam;
 

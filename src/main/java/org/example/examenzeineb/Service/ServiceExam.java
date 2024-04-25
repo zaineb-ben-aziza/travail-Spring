@@ -1,9 +1,8 @@
-    package com.example.examanhoussemhosni.Service;
-
-    import com.example.examanhoussemhosni.Entity.Bank;
-    import com.example.examanhoussemhosni.Entity.Compte;
-    import com.example.examanhoussemhosni.Entity.Transaction;
-    import com.example.examanhoussemhosni.Entity.TypeTransaction;
+package org.example.examenzeineb.Service;
+    import org.example.examenzeineb.Entity.Bank;
+    import org.example.examenzeineb.Entity.Compte;
+    import org.example.examenzeineb.Entity.Transaction;
+    import org.example.examenzeineb.Entity.TypeTransaction;
 
     import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.examanhoussemhosni.Entity;
+package org.example.examenzeineb.Entity;
 
 public enum TypeTransaction {
     VERSEMENT,
