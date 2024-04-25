@@ -1,0 +1,14 @@
+    package com.example.examanhoussemhosni.Repo;
+    import com.example.examanhoussemhosni.Entity.Transaction;
+    import com.example.examanhoussemhosni.Entity.TypeTransaction;
+    import org.springframework.data.jpa.repository.JpaRepository;
+    import org.springframework.data.jpa.repository.Query;
+
+    import java.util.List;
+
+    public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+        List<Transaction> findByDateTransaction(String date);
+        @Query("SELECT t FROM Transaction t WHERE t.compteExpiediteur.bank.idBank = ?1")
+        List<Transaction> getAllTransactionByBankId(long idBank);
+        List<Transaction> findAllByTypeAndCompte_IdCompte(TypeTransaction type, long idCompte);
+    }

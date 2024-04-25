@@ -1,26 +1,29 @@
-package org.example.examenzeineb.entities;
+package com.example.examanhoussemhosni.Entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@ToString
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
-@ToString
 public class Compte implements Serializable {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idCompte;
-    Double solde;
-    Long code;
     @Enumerated(EnumType.STRING)
-    TypeCompte typeCompteC;
+   TypeCompte type;
+     Long code;
+    Double solde;
+    @ManyToOne
+    @JoinColumn(name = "bank_id")
+    Bank bank;
 
 
 }
