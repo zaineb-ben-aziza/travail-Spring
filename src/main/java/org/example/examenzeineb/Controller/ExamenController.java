@@ -13,7 +13,7 @@
     import java.util.List;
 
     @RestController
-    public class EController {
+    public class ExamenController {
         @Autowired
         private ServiceExam serviceExam;
 
